@@ -11,7 +11,7 @@ do
 	echo
 	echo "Execution done"
 	read -p "Do you want to continue the Loop : yes/no " is_loop
-	if [[ ${is_loop,,} == "no" ]]
+	if [[ ${is_loop,,} == "no" ]] #,, to lowercase the string
 		then
 		echo Exiting the Loop
 		break # without break it will be an infinte loop becoz the condition is true
